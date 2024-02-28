@@ -378,7 +378,8 @@ a:hover {
   left: 59px;
   color: var(--color-white);
 }
-.approachRightContent h4 {
+.approachRightContent :first-child {
+  font-weight: 800;
   margin-bottom: 24px;
 }
 @media screen and (max-width: 1024px) {
