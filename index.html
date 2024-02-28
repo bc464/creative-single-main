@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Creative single page site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <img src="./assets/desktop/logo.svg" alt="company logo" />
+      <div class="nav-right">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><button class="btn btnBlack">Schedule a Call</button></li>
+        </ul>
+      </div>
+      <div class="nav-mobile">
+        <div class="mobile-icon">
+          <img
+            src="./assets/mobile/icon-hamburger.svg"
+            alt="hamburger-icon"
+            class="hamburgerIcon"
+          />
+
+          <img
+            src="./assets/mobile/icon-cross.svg"
+            alt="cross icon"
+            class="crossIcon"
+          />
+        </div>
+
+        <div class="mobile-content">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><button class="btn btnOrange">Schedule a Call</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO SECTION -->
+    <header role="banner" class="heroContainer">
+      <div class="heroContent">
+        <h1>Branding & website design agency</h1>
+        <p>
+          We specialize in visual storytelling by creating cohesive brand and
+          website design solutions for small businesses, giving lasting
+          impressions to audiences in a digital world.
+        </p>
+        <button class="btn btnOrange">Learn More</button>
+      </div>
+      <div class="heroImageContent">
+        <picture>
+          <source
+            media="(min-width: 800px)"
+            srcset="./assets/desktop/image-hero.jpg"
+          />
+          <source
+            media="(min-width: 749px)"
+            srcset="./assets/tablet/image-hero.jpg"
+          />
+          <img
+            src="./assets/mobile/image-hero.jpg"
+            alt="hero-image"
+            class="heroImg"
+          />
+        </picture>
+      </div>
+    </header>
+    <main>
+      <!-- DESIGN -->
+      <div class="designWrapper">
+        <div class="designPattern">
+          <img
+            src="./assets/desktop/bg-pattern-wave-red.svg"
+            alt="bg-pattern-wave-red"
+            class="patternWaveRed"
+          />
+        </div>
+        <div class="designContainer">
+          <div class="designImageContent">
+            <picture>
+              <source
+                media="(min-width: 1025px)"
+                srcset="./assets/desktop/image-strategic.jpg"
+              />
+              <source
+                media="(min-width: 749px)"
+                srcset="./assets/tablet/image-strategic.jpg"
+              />
+              <img
+                src="./assets/mobile/image-strategic.jpg"
+                alt="hero-image"
+                class="designImg"
+              />
+            </picture>
+          </div>
+          <div class="designTextContent">
+            <h2><span class="designHeading">Design</span> is strategic.</h2>
+            <p>
+              A well-crafted design strategy consistently produces desired
+              outcomes and brand awareness. We are firm believers that success
+              lies in creative collaboration with our clients.
+            </p>
+            <a href="#">Schedule a Call</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- APPROACH SECTION -->
+      <div class="approachContainer">
+        <div class="approachLeft">
+          <div class="approachLeftHeading">
+            <h2>Our approach for creating a winning brand</h2>
+          </div>
+        </div>
+        <div class="approachRight">
+          <div class="approachRightBox">
+            <h1>01</h1>
+            <div class="approachRightContent">
+              <h4>Brand strategy</h4>
+              <p>
+                Brand strategy is critical for long-term success. Outshining
+                competitors and capturing the target audience are key.
+              </p>
+            </div>
+          </div>
+
+          <div class="approachRightBox">
+            <h1>02</h1>
+            <div class="approachRightContent">
+              <h4>Brand design</h4>
+              <p>
+                Keeping the brand design unique and meaningful helps in
+                communicating the brand’s timeless value effectively.
+              </p>
+            </div>
+          </div>
+
+          <div class="approachRightBox">
+            <h1>03</h1>
+            <div class="approachRightContent">
+              <h4>Web design</h4>
+              <p>
+                A beautifully crafted website is the best tool for brand
+                awareness, and ultimately results in increased revenues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BRAND SECTION -->
+      <div class="brandContainer">
+        <div id="brandNaming" class="brandContent active" data-id="0">
+          <div class="brandTextContainer">
+            <div class="brandTextContent">
+              <h2>Brand naming & guidelines</h2>
+              <div class="brandNextArrows" data-number="1">
+                <img
+                  src="./assets/desktop/icon-arrow-previous.svg"
+                  alt="arrow previous icon"
+                  class="brandArrow"
+                  id="prev-arrow"
+                />
+                <img
+                  src="./assets/desktop/icon-arrow-next.svg"
+                  alt="arrow next icon"
+                  class="brandArrow"
+                  id="next-arrow"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="brandImageContainer">
+            <div class="designWave">
+              <div class="designWavePattern">
+                <img
+                  src="./assets/desktop/bg-pattern-wavy-white.svg"
+                  alt="bg-pattern-wave-white"
+                  class="patternWaveWhite"
+                />
+              </div>
+            </div>
+            <div class="brandImageBox">
+              <picture>
+                <source
+                  media="(min-width: 1100px)"
+                  srcset="./assets/desktop/image-slide-1.jpg"
+                />
+                <source
+                  media="(min-width: 749px)"
+                  srcset="./assets/tablet/image-slide-1.jpg"
+                />
+                <img
+                  src="./assets/mobile/image-slide-1.jpg"
+                  alt="slider image one"
+                  class="brandImage"
+                />
+              </picture>
+              <div class="brandImageContent">
+                <h4>Lean Product Roadmap</h4>
+                <p>2019 Project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BRAND IDENTITY -->
+        <div id="brandIdentity" class="brandContent" data-id="1">
+          <div class="brandTextContainer">
+            <div class="brandTextContent">
+              <h2>Brand identity & merchandise</h2>
+              <div class="brandNextArrows" data-number="2">
+                <img
+                  src="./assets/desktop/icon-arrow-previous.svg"
+                  alt="arrow previous icon"
+                  class="brandArrow"
+                  id="prev-arrow"
+                />
+                <img
+                  src="./assets/desktop/icon-arrow-next.svg"
+                  alt="arrow next icon"
+                  class="brandArrow"
+                  id="next-arrow"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="brandImageContainer">
+            <div class="designWave">
+              <div class="designWavePattern">
+                <img
+                  src="./assets/desktop/bg-pattern-wavy-white.svg"
+                  alt="bg-pattern-wave-white"
+                  class="patternWaveWhite"
+                />
+              </div>
+            </div>
+            <div class="brandImageBox">
+              <picture>
+                <source
+                  media="(min-width: 1100px)"
+                  srcset="./assets/desktop/image-slide-2.jpg"
+                />
+                <source
+                  media="(min-width: 749px)"
+                  srcset="./assets/tablet/image-slide-2.jpg"
+                />
+                <img
+                  src="./assets/mobile/image-slide-2.jpg"
+                  alt="slider image one"
+                  class="brandImage"
+                />
+              </picture>
+
+              <div class="brandImageContent">
+                <h4>New Majestic Hotel</h4>
+                <p>2018 Project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BRAND WEBSITE -->
+        <div id="brandWebsite" class="brandContent" data-id="2" data-number="3">
+          <div class="brandTextContainer">
+            <div class="brandTextContent">
+              <h2>Brand identity & web design</h2>
+              <div class="brandNextArrows" data-number="3">
+                <img
+                  src="./assets/desktop/icon-arrow-previous.svg"
+                  alt="arrow previous icon"
+                  class="brandArrow"
+                  id="prev-arrow"
+                />
+                <img
+                  src="./assets/desktop/icon-arrow-next.svg"
+                  alt="arrow next icon"
+                  class="brandArrow"
+                  id="next-arrow"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="brandImageContainer">
+            <div class="designWave">
+              <div class="designWavePattern">
+                <img
+                  src="./assets/desktop/bg-pattern-wavy-white.svg"
+                  alt="bg-pattern-wave-white"
+                  class="patternWaveWhite"
+                />
+              </div>
+            </div>
+            <div class="brandImageBox">
+              <picture>
+                <source
+                  media="(min-width: 1100px)"
+                  srcset="./assets/desktop/image-slide-3.jpg"
+                />
+                <source
+                  media="(min-width: 749px)"
+                  srcset="./assets/tablet/image-slide-3.jpg"
+                />
+                <img
+                  src="./assets/mobile/image-slide-3.jpg"
+                  alt="slider image one"
+                  class="brandImage"
+                />
+              </picture>
+
+              <div class="brandImageContent">
+                <h4>Crypto Dashboard</h4>
+                <p>2016 Project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo" class="footerContainer">
+      <h2>Let's build something great together.</h2>
+      <button class="btn btnOrange">Schedule a Call</button>
+    </footer>
+  </body>
+</html>
