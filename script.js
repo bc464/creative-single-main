@@ -1,8 +1,8 @@
-const prevArrow = document.getElementById("prev-arrow");
-const nextArrow = document.getElementById("next-arrow");
+const prevArrow = document.querySelector(".prev-arrow");
+const nextArrow = document.querySelector(".next-arrow");
 
-const prevArrowBtns = document.querySelectorAll("#prev-arrow");
-const nextArrowBtns = document.querySelectorAll("#next-arrow");
+const prevArrowBtns = document.querySelectorAll(".prev-arrow");
+const nextArrowBtns = document.querySelectorAll(".next-arrow");
 
 const brandBtns = document.querySelectorAll(".brandArrow");
 
